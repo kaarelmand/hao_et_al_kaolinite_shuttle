@@ -4,7 +4,6 @@ Code for parameter generation and data visualisation for the article "The kaolin
 
 This is used to generate Figures 1 in the main manuscript and Figures S1, S4, S5, and S6 in the Supplementary Information file.
 
-[`matplotlib`](https://github.com/matplotlib/matplotlib), [`seaborn`](https://github.com/mwaskom/seaborn/), and [`python-ternary`](https://github.com/marcharper/python-ternary).
 Further data analysis and visualisation (not in this repository) involved [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel) and [Inkscape](https://inkscape.org/) software suites.
 
 ## Paleosols workflow
@@ -12,8 +11,9 @@ Further data analysis and visualisation (not in this repository) involved [Micro
 ### Data stitching and parameter generation
 
 The data is inputted in the Microsoft Excel spreadsheet `input_paleosols.xlsx`, which includes paleosol data seperated per source reference on different sheets, but using a unified table structure.
-The ipython notebook `paleosol_unify.ipynb` then applies [`pandas`](https://github.com/pandas-dev/pandas) to stitch the data into a unified table, outputted as the spreadsheet `unified_paleosols.xlsx`.
-This file also includes calculated chemical parameters represented through Excel formulae referencing the inputted data in order that the calculations could be vetted by colleagues not familiar with python.
+The ipython notebook `paleosol_unify.ipynb` then applies [`pandas`](https://github.com/pandas-dev/pandas), [`pyrolite`](https://github.com/morganjwilliams/pyrolite/), and [`mendeleev`](https://github.com/lmmentel/mendeleev) to stitch the data into a unified table with homogenised units, outputted as the spreadsheet `unified_paleosols.xlsx`.
+For calculated chemical parameters, instead of only saving the calculated number, the cells are instead filled with Excel formulae referencing the inputted data.
+This is done in order that the calculations could be vetted by colleagues not familiar with python.
 This is done using the [`openpyxl`](https://foss.heptapod.net/openpyxl/openpyxl) package.
 
 ### Data visualisation
