@@ -23,9 +23,9 @@ Visualisation employs the [matplotlib](https://github.com/matplotlib/matplotlib)
 
 ## Shale XRD workflow
 
-Shale mineralogical data is collected from spreadsheets `input_data/franceville_xrd.csv` and `input_data/onega_xrd.xlsx` with [pandas](https://github.com/pandas-dev/pandas), then visualised using [matplotlib](https://github.com/matplotlib/matplotlib) in the `lithosection_visualise.ipynb` notebook.
+Shale mineralogical data is collected from spreadsheets `input_data/franceville_xrd.csv` and `input_data/onega_xrd.xlsx` with pandas, then visualised using matplotlib in the `lithosection_visualise.ipynb` notebook.
 Both lithological columns and legend are present in the `franceville_litho.png`, `onega_litho.png`, and `litho_legend.png` files, respectively.
 
 ## Titration workflow
 
-Visualisation of kaolinite titration data in the `titration_visualise.ipynb` notebook works off of the `titration_ca-cb.csv` and `titration_logK.csv` files in the `input_data` folder with the help of [pandas](https://github.com/pandas-dev/pandas) and [matplotlib](https://github.com/matplotlib/matplotlib).
+Visualisation of kaolinite titration data in the `titration_visualise.ipynb` notebook works off of the `titration_ca-cb.csv` and `titration_logK.csv` files in the `input_data` folder with the help of pandas and matplotlib.
