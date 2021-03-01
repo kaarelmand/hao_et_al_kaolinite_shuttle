@@ -28,4 +28,4 @@ Both lithological columns and legend are present in the `franceville_litho.png`,
 
 ## Titration workflow
 
-TO BE ADDED
+Visualisation of kaolinite titration data in the `titration_visualise.ipynb` notebook works off of the `titration_ca-cb.csv` and `titration_logK.csv` files in the `input_data` folder with the help of [pandas](https://github.com/pandas-dev/pandas) and [matplotlib](https://github.com/matplotlib/matplotlib).
