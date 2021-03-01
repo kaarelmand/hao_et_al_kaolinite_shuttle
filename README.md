@@ -10,20 +10,21 @@ Further data analysis and visualisation (not in this repository) involved [Micro
 
 ### Data stitching and index generation
 
-The data is inputted in the Microsoft Excel spreadsheet `input_paleosols.xlsx`, which includes paleosol data seperated per source reference on different sheets, but using a unified table structure.
-The ipython notebook `paleosol_unify.ipynb` then applies [`pandas`](https://github.com/pandas-dev/pandas), [`pyrolite`](https://github.com/morganjwilliams/pyrolite/), and [`mendeleev`](https://github.com/lmmentel/mendeleev) to stitch the data into a unified table with homogenised units, outputted as the spreadsheet `unified_paleosols.xlsx`.
-For calculated chemical indices, instead of only saving the calculated number, the cells are instead filled with Excel formulae referencing the inputted data to enable vetting by non-python-users.
-This is done with the [`openpyxl`](https://foss.heptapod.net/openpyxl/openpyxl) package.
+The data is read in from the Microsoft Excel spreadsheet `input_data/input_paleosols.xlsx`, which contains paleosol data separated on different sheets per source reference, but using a semi-unified table structure.
+The ipython notebook `paleosol_unify.ipynb` then applies [pandas](https://github.com/pandas-dev/pandas), [pyrolite](https://github.com/morganjwilliams/pyrolite/), and [mendeleev](https://github.com/lmmentel/mendeleev) to stitch the data into a single table with homogenised units, saved as the spreadsheet `unified_paleosols.xlsx`.
+For chemical indices, instead of saving only the calculated number, the cells are filled with Excel formulae referencing the stitched data to enable vetting by non-python-users.
+This is done with the [openpyxl](https://foss.heptapod.net/openpyxl/openpyxl) package.
 
 ### Data visualisation
 
-Data visualisation is done in the `paleosol_visualise.ipybn` notebook, referencing the `unified_paleosols.xlsx` spreadsheet.
-Importantly, prior to running the `paleosol_visualise.ipybn` notebook, the .xlsx file will need to be opened and saved once in Microsoft Excel or Libreoffice Calc, in order that the formulae be evaluated and the results accessible to `pandas`.
-Visualisation employs the [`matplotlib`](https://github.com/matplotlib/matplotlib), [`seaborn`](https://github.com/mwaskom/seaborn/), and [`python-ternary`](https://github.com/marcharper/python-ternary) packages and the figures are outputted in .svg and .png formats.
+Data visualisation happens in the `paleosol_visualise.ipybn` notebook, referencing the `unified_paleosols.xlsx` spreadsheet.
+Importantly, prior to running the `paleosol_visualise.ipybn` notebook, the .xlsx file will need to be opened and saved once in Microsoft Excel or Libreoffice Calc, in order that the formulae be evaluated and the results accessible to pandas.
+Visualisation employs the [matplotlib](https://github.com/matplotlib/matplotlib), [seaborn](https://github.com/mwaskom/seaborn/), and [python-ternary](https://github.com/marcharper/python-ternary) packages and the figures are saved as 350-dpi .png files in the `figures` folder.
 
-## Shale workflow
+## Shale XRD workflow
 
-TO BE ADDED
+Shale mineralogical data is collected from spreadsheets `input_data/franceville_xrd.csv` and `input_data/onega_xrd.xlsx` with [pandas](https://github.com/pandas-dev/pandas), then visualised using [matplotlib](https://github.com/matplotlib/matplotlib) in the `lithosection_visualise.ipynb` notebook.
+Both lithological columns and legend are present in the `franceville_litho.png`, `onega_litho.png`, and `litho_legend.png` files, respectively.
 
 ## Titration workflow
 
