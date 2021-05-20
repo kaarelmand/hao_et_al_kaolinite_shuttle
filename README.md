@@ -1,6 +1,6 @@
-# The kaolinite shuttle: Linking the Great Oxidation and Lomagundi events
+# The kaolinite shuttle links the Great Oxidation and Lomagundi events
 
-Code for geochemical index calculation and data visualisation for the article "The kaolinite shuttle: Linking the Great Oxidation and Lomagundi events" by Weiduo Hao, Kaarel Mänd, Yuhao Li, Daniel S. Alessi, Peeter Somelar, Mathieu Moussavou, Alexander E. Romashkin, Aivo Lepland, Kalle Kirsimäe, Noah J. Planavsky, and Kurt O. Konhauser.
+Code for geochemical index calculation and data visualisation for the article "The kaolinite shuttle links the Great Oxidation and Lomagundi events" by Weiduo Hao, Kaarel Mänd, Yuhao Li, Daniel S. Alessi, Peeter Somelar, Mathieu Moussavou, Alexander E. Romashkin, Aivo Lepland, Kalle Kirsimäe, Noah J. Planavsky, and Kurt O. Konhauser, published in [Nature Communications](https://doi.org/10.1038/s41467-021-23304-8).
 
 This is used to generate Figures 1 in the main manuscript and Figures S1, S4, S5, and S6 in the Supplementary Information file.
 
